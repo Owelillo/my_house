@@ -16,6 +16,7 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Circle moon;
+    private Square plain;
     /**
      * Constructor for objects of class Picture
      */
@@ -47,19 +48,29 @@ public class Picture
         roof.moveHorizontal(20);
         roof.moveVertical(-60);
         roof.makeVisible();
+        
+        plain = new Square();
+        plain.makeVisible();
+        plain.changeColor("green");
+        plain.changeSize(500);
+        plain.moveHorizontal(-310);
+        plain.moveVertical(120);
 
         sun = new Circle();
         sun.changeColor("yellow");
-        sun.moveHorizontal(100);
-        sun.moveVertical(-40);
+        sun.moveHorizontal(180);
+        sun.moveVertical(-90);
         sun.changeSize(80);
         sun.makeVisible();
+        sun.slowMoveVertical(300);
         
         moon = new Circle();
         moon.makeVisible();
         moon.moveHorizontal(-150);
         moon.changeColor("magenta");
         moon.changeSize(50);
+        
+       
     }
 
     /**
