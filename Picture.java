@@ -100,4 +100,9 @@ public class Picture
             sun.changeColor("yellow");
         }
     }
+    public void NuevoMetodo() {
+    moon.makeInvisible();
+    sun.makeVisible();
+    sun.moveVertical(-240);
+    }
 }
